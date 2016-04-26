@@ -1,0 +1,892 @@
+
+s "color: #112283;font-size: 20px">
+
+
+/* ----------------------- */
+/* Basic setup */
+/* ----------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #555;
+    font-family: 'lato', 'arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix{zoom: 1; }
+.clearfix: {
+    content: ',';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------- */
+/* ReUsable Components  */
+/* ----------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/hero2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; 
+   
+}
+
+.hero-text-box{
+    position:absolute; 
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    }
+
+
+.box{
+    padding: 1%;
+}
+
+
+/* ----------------------- */
+/* HEADINGS  */
+/* ----------------------- */
+
+
+h1, h2,h3 {    
+    font-weight: 300;
+    text-transform: uppercase;
+   }
+
+h1 {
+    text-align:left;
+    color: #fff;
+    margin-top:0;
+    margin-bottom: 20px;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+       
+}
+
+h2{ 
+    font-size: 180%;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3{
+    margin-bottom: 15px;
+    font-size:110%;
+}
+
+/*---- 
+h2:after {
+    display:block;
+    height: 2px;
+    background-color: #e62e22;
+    content: " ";        /*--- this is for giving a underline kind of thing after h2 element----*/
+
+/*---- 
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+----- */
+
+ 
+
+
+#gotoPortfolio {
+  background: #19273d;
+  width: 72px;
+  height: 72px;
+  border-radius: 72px;
+  line-height: 72px;
+  display: inline-block;
+  margin-top: 70px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+    
+}
+#gotoPortfolio .arrow {
+  margin: 34px 28px;
+  background-image: url("img/arrows.png");
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  top: -45px; 
+  transition: all 0.2s linear;
+  background-position: -5px -5px;
+  width: 15px;
+  height: 9px; 
+}
+#gotoPortfolio .arrow.white {
+  background-position: -30px -5px;
+  width: 15px;
+  height: 9px;
+}
+#gotoPortfolio:hover {
+  background: #58eef7;
+}
+#gotoPortfolio:hover .arrow {
+  top: 0;
+}
+
+
+
+/* ----------------------- */
+/* PARAGRAPH  */
+/* ----------------------- */
+ 
+
+/* ----------------------- */
+/* PARAGRAPH  */
+/* ----------------------- */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/* ----------------------- */
+/* ICONS  */
+/* ----------------------- */
+
+.icon-big{
+    font-size: 350%;
+    color: #e62e22;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    margin-right: 10px;
+    font-size: 120%;
+    
+    /* secrets to align icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    
+    
+}
+
+/* ----------------------- */
+/* LINKS  */
+/* ----------------------- */
+
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+    
+}
+
+/* ----------------------- */
+/* BUTTONS  */                                   /*--- buttons-*/
+/* ----------------------- */
+
+
+  .btn:link, 
+  .btn:visited,
+ input[type=submit]{
+     
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: #e67e22;
+    color: #fff;
+    border-radius: 200px;
+    transition: background-color 0.2s,color 0.2s,border 0.2s;
+}
+
+.btn-full: link,
+.btn-full: visited,
+input[type=submit]{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+    }
+
+.btn-ghost: link,
+.btn-ghost: visited{
+    border: 1px solid #e67e22;
+     color: #e67e22;
+     color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #cf6d17;
+}
+
+.btn-full: hover,
+.btn-full: active,{
+        border: 1px solid #cf6d17;
+    }
+
+.btn-ghost: hoover,
+.btn-full: active{
+    border: 1px solid #cf6d17;
+    color: #fff;
+    }
+
+.logo,
+.logo-black{
+    height: 50px;
+    width: 200px;
+    
+    float:none;
+    margin-left: 150px;
+}
+
+.
+
+.logo-black{ display: none;}
+
+
+
+/* MAIN NAV  */              /*--- menu on the top lefft side-*/
+
+.main-nav {
+    float:right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display:inline-block;
+    margin-left:20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;               /* here the 90% of font size is on 20px of html font-size */
+    border-bottom: 2px solid transparent;
+    transition: border-bottm 0.2s;
+}
+
+.main-nav li  a:hover,
+.main-nav li  a:active {
+    border-bottom: 2px solid #e67e22;
+    color: #e67e22;
+}
+
+
+/* Modile navi */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: white;    
+}
+    
+    
+/* ----------------------- */
+/* STICKY NAV  */                                              /* top menu should be STICKY NAV even the page we are scrolling down  */ 
+/* ----------------------- */
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.icon-top{
+    color: #e67e22;
+    
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 1px 0;
+    color: #555;
+}
+
+.sticky.logo{display: none;}
+.sticky .logo-black{
+    display: block;
+}
+
+.main-nav{margin-top: 15px};
+
+
+/* ----------------------- */
+/* FEATURES  */
+/* ----------------------- */
+
+.Section Features js--section-features{
+    
+ 
+    
+}
+.Section Features .long-copy { 
+}
+
+/* ----------------------- */
+/* MEALS  */                    /*---zoom in effect, the pics are in a list, ---*/
+/* ----------------------- */
+
+.section-meals {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.meals-showcase li {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.meal-photo {
+    background-color: #000;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/* ----------------------- */
+/* HOW IT WORKS  */                            /* iphone and  some text, for this used grid.css  */   
+/* ----------------------- */
+
+.section-steps{
+    background-color: #f4f4f4;
+}
+
+
+section-steps .tech {
+    color: #391381;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top:30px;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.section-steps p{
+    color: #e67e22;
+    font-size: 40px;
+}
+
+.app-screen {
+    opacity: 1;
+    width: 40%;
+    height: auto;
+    transform: scale(0.75);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.app-screen:hover {
+    transform: scale(1.03);
+    opacity: 0.7;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step: last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display:inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 150%;
+    padding: 5px;
+    float: left;
+    margin-right: 25px;
+    }
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+/* ----------------------- */
+/* CITIES  */
+/* ----------------------- */
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    }
+.city-features {
+    margin-bottom: 5px;
+}
+
+/* ----------------------- */
+/* TESTIMONIALS  */
+/* ----------------------- */
+
+.section-testimonials{
+    background-image:  linear-gradient(rgba(180, 149, 149, 0.8),rgba(0,0,0,0.8));
+    background-size: cover;  
+   
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic; /*- already given the reference of google fonts- */
+    line-height: 145%;
+    position: relative;
+}
+
+blockquote:before {                                             /*  quotation marks  */
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left:-5px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 5%;
+    display: block;
+    }
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* ----------------------- */
+/* SIGN-UP  */
+/* ----------------------- */
+
+.section-plan{
+    background-color: #f4f4f4;
+    }
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;    
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal{
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+/* ----------------------- */
+/* FORM  */
+/* ----------------------- */
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width:100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+    }
+
+.map-box{
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+
+.map{
+    width: 100%;
+    height: 560px;
+    position: relative;
+    z-index: 0;
+}
+
+.form-box{
+    position: absolute;
+    width: 50%;
+    top:0;
+    right: 0;
+    background-color: rgba(255, 255, 255,0.8);
+    z-index: 10;
+    height: 520px;
+    padding-top: 40px;
+}
+
+/* ----------------------- */
+/* Footer  */
+/* ----------------------- */
+
+    footer {
+        background-color: #333;
+        font-size: 80%;
+        padding: 50px;
+    }
+    
+    .footer-nav{
+        list-style: none;
+        float: left;
+    }
+    
+    .social-links {
+        list-style: none;
+        float: right;
+    }
+    .footer-nav li,
+    .social-links li{
+        display: inline-block;
+        margin-right: 20px;   
+    }
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+         margin-right: 0;   
+    }
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram{
+    transition: color: 0.2s;
+}
+
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+.ion-social-twitter:hover{
+    color: #00aced;
+}
+.ion-social-googleplus:hover{
+    color: #dd4b39;
+}
+.ion-social-instagram:hover{
+    color: #517fa4;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+     margin-top: 20px;
+}
+ 
+
+#skills_page {
+  background: #f4f4f4;
+}
+#skills_page h2 {
+  color: #19273d;
+}
+#skills_page .skill_box {
+  background: #F4F4F4;
+  margin-bottom: 40px;
+  border: 1px solid #e9e9e9;
+  width: 158px;
+  height: 158px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  display: none;
+  vertical-align: top;
+}
+#skills_page .skill_box.nomargin {
+  margin-left: 0;
+}
+#skills_page .skill_box .name {
+  font-family: 'novocento';
+  font-size: 22px;
+  padding-top: 55px;
+  color: #19273d;
+}
+#skills_page .skill_box .rate {
+  font-family: 'novecento-medium';
+  color: #707c90;
+  background: #efefef;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15) inset;
+  width: 60px;
+  line-height: 25px;
+  height: 25px;
+  margin: 10px auto;
+  font-size: 12px;
+}
+#skills_page .skill_box .rate_bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #7788a3;
+  height: 5px;
+}
+#skills_page .skill_box .rate_bar [class^="b"] {
+  background: #58eef7;
+  height: 5px;
+  display: block;
+}
+#skills_page .skill_box .rate_bar .b1 {
+  width: 10%;
+}
+#skills_page .skill_box .rate_bar .b2 {
+  width: 20%;
+}
+#skills_page .skill_box .rate_bar .b3 {
+  width: 30%;
+}
+#skills_page .skill_box .rate_bar .b4 {
+  width: 40%;
+}
+#skills_page .skill_box .rate_bar .b5 {
+  width: 50%;
+}
+#skills_page .skill_box .rate_bar .b6 {
+  width: 60%;
+}
+#skills_page .skill_box .rate_bar .b7 {
+  width: 70%;
+}
+#skills_page .skill_box .rate_bar .b8 {
+  width: 80%;
+}
+#skills_page .skill_box .rate_bar .b9 {
+  width: 90%;
+}
+#skills_page .skill_box .rate_bar .b10 {
+  width: 100%;
+}
+#skills_page .skill_box.big {
+  width: 358px;
+}
+#sortable_skills {
+  text-align: justify;
+  font-size: 160px;
+}
+#skills_menu {
+  font-family: 'novocento';
+  float: right;
+  margin-top: 60px;
+}
+#skills_menu a {
+  display: inline-block;
+  padding: 5px 10px;
+  text-transform: #b7b7b7;
+  color: #b7b7b7;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+#skills_menu a:hover {
+  color: white;
+  background: #58eef7;
+}
+#skills_menu a.active {
+  font-family: 'novecento-medium';
+  color: #9b9a9a;
+}
+.site {
+    margin: 0 auto;
+    width: 960px;
+}   
+
+.github{ 
+ background: #F4F4F4;
+ color: #58eef7;
+  margin-bottom: 40px;
+  border: 1px solid #e9e9e9;
+  width: 300px;
+  height: 50px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  display: none;
+  vertical-align: top;
+    font-size: 15px;
+    border-radius: 5px;
+    }
+
+.github:hover{
+    background: #e67e22;
+        
+}
+
+.github2{
+background: #F4F4F4;
+  margin-bottom: 40px;
+  border: 1px solid #e9e9e9;
+  width: 350px;
+  height: 150px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  display: none;
+  vertical-align: top;
+    border-radius: 5px;
+    color: #bcb9b6;
+ 
+}
+
+
+
+
+
